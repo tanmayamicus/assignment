@@ -50,6 +50,9 @@ function savefile(){
  document.getElementById("down").addEventListener("click",function(){
     var content = atob(binar);
     var selected_edu=document.getElementById("typ").value;
+     if(selected_edu!=file_ext){   
+    alert("The uploaded file extention is : "+file_ext+" and you are downloading it with extention : "+selected_edu);
+    }
     fname = file_name+"."+selected_edu;
     download(fname,content);
 
