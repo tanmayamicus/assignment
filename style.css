@@ -1,0 +1,44 @@
+.contain{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    grid-template-rows: 100%;
+    height: 100%;
+}
+.inbox{
+    display: grid;
+    grid-template-rows: 60% 20%;
+    background-color: rgb(219, 207, 166);
+    height: 100%;
+    width: 100%;
+}
+.form-class{
+    margin: 150px;
+    align-content: stretch;
+}
+
+.insform{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #2196F3;
+    width: 100%;
+    grid-template-rows: 100%;
+    height: 100%;
+}
+.insform-rows{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+    
+}
+.sub{
+    background-color: #e7e7e7; color: black;
+    padding: 15px 32px;
+  text-align: center;
+  
+  display: inline-block;
+  font-size: 16px;
+}
