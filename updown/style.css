@@ -1,0 +1,12 @@
+body{
+    background: rgb(226, 235, 104);
+}
+div{
+    border:2px black;
+    padding: 130px;
+    outline-style: auto;
+    display: block;
+    margin: 100px;
+    height: 600px;
+    align-content: center;
+}
