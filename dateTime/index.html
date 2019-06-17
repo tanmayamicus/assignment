@@ -1,0 +1,55 @@
+        <html>
+                <head>
+                <title>Time Zone</title>
+                </head>
+                <body onload="browser_info()"> 
+                        <center>
+                        <div>
+                                <span id='ct' ></span>
+                                <br>
+                                <input type="datetime-local" id="input_dt">
+                            <br>
+                            <select id="tz">
+                                <option value="+12">ANAT</option>
+                                <option value="+11">SBT</option>
+                                <option value="+10">AEST</option>
+                                <option value="+9">JST</option>
+                                <option value="+8">CST(China)</option>
+                                <option value="+7">WIB</option>
+                                <option value="+6">IST</option>
+                                <option value="+5">UZT</option>
+                                <option value="+4">GST</option>
+                                <option value="+3">MSK</option>
+                                <option value="+2">CEST</option>
+                                <option value="+1">BST(UK)</option>
+                                <option value="0">GMT</option>
+                                <option value="-1">CVT</option>
+                                <option value="-2">WGST</option>
+                                <option value="-3">ART</option>
+                                <option value="-4">EDT</option>
+                                <option value="-5">CDT</option>
+                                <option value="-6">CST</option>
+                                <option value="-7">PDT</option>
+                                <option value="-8">AKDT</option>
+                                <option value="-9">HDT</option>
+                                <option value="-10">HST</option>
+                                <option value="-11">NUT</option>
+                                <option value="-12">AoE</option>
+                            </select>
+                            <input type="button" onclick="calc()" id="btn" value="convert">
+                            <br><br><br>
+                            <div id="out"></div>
+                        </div>
+                    <div id="b_ip"style="text-align: justify"></div>
+                    <div id="b_info" style="text-align: justify"></div>
+                </center>
+                <script type="application/javascript">
+                    function getIP(json) {
+                    document.getElementById("b_ip").innerHTML= "IP address : "+json.ip;
+                    }
+                    </script>
+                    <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+
+                <script type="text/javascript" src="javascript.js"></script>
+                </body>
+</html>
